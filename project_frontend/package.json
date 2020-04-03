@@ -1,0 +1,46 @@
+{
+  "name": "project_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.18.0",
+    "bulma": "^0.8.0",
+    "node-sass": "^4.13.1",
+    "nprogress": "^0.2.0",
+    "react": "^16.13.1",
+    "react-bulma-components": "^3.2.0",
+    "react-document-meta": "^3.0.0-beta.2",
+    "react-dom": "^16.13.1",
+    "react-dropzone-component": "^3.2.0",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "browserslist": "^4.11.0",
+    "webpack": "^4.42.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
