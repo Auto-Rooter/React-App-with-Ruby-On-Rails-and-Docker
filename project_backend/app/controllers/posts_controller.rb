@@ -4,8 +4,7 @@ class PostsController < ApplicationController
     # GET /api/posts
     def index
       #values = {"posts" => {Post.all.with_attached_image.page(params[:page]).per(2)} }
-
-      render json: Post.all.with_attached_image
+      render json: Post.recent.with_attached_image
     end
   
 

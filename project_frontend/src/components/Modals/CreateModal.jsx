@@ -32,9 +32,9 @@ export default class CreateModal extends React.Component {
          }
          
          
-        createPost(formPostData).then(response => {
+      createPost(formPostData).then(response => {
         this.props.onCreate();
-        this.props.onClose && this.props.onClose("");
+        this.props.onClose();
       }).catch(error => {
         alert(`Something went wrong: ${error}`)
       });

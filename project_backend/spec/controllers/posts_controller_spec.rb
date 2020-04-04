@@ -4,19 +4,21 @@ RSpec.describe PostsController, type: :controller do
     describe "#index" do
         subject { get :index } 
         it 'should return success response' do
-            get :index
+            subject
             expect(response).to have_http_status(:ok)
         end
 
         it 'should return proper body' do
-            posts = create_list :post, 5
-            get :index
-            posts.each_with_index do |post, index|
+            create_list :post, 5
+            subject
+            Post.recent.each_with_index do |post, index|
                 expect(json[index]['title']).to eq(post.title)
                 expect(json[index]['description']).to eq(post.description)    
             end
-        end
+        end  
     end
+
+
     
 end
 
