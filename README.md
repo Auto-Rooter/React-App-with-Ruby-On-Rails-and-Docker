@@ -6,6 +6,6 @@
 
 ## APIs:
     1- Blog API : you can add post with(out) images also with comments
-        ![](/imgs/comments.gif)
+        ![](imgs/comments.gif)
     2- Triangel Checker: check if a triangle (by entering three parameters a,b,c) Scaleme/Equilat/
                             Isosceles/Incorrect
