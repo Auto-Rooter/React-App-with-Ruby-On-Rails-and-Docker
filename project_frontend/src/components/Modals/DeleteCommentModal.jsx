@@ -56,7 +56,7 @@ export default class DeleteCommentModal extends React.Component {
                             <div className="card-content">
                              <form onSubmit={this.handleSubmit}>
 
-                                    <h2 class="subtitle" style={{ "text-align": "center", "font-weight" : "bold" }}>Are You sure you want to this Comment #{this.props.commentId}? </h2>
+                                    <h2 class="subtitle" style={{ "text-align": "center", "font-weight" : "bold" }}>Are You sure you want to delete this Comment #{this.props.commentId}? </h2>
                                     <div>
                                         <input type="submit" value="Delete" className="button is-danger" style={{ float: "left" }} />
                                         <a className="button" onClick={this.onClose} style={{ float: "right" }}>Cancel</a>

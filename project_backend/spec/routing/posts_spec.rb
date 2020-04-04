@@ -14,10 +14,10 @@ describe "posts routes" do
     end
 
     it "should route to posts create" do
-        expect(post 'api/v1/posts').to route_to('posts#index') 
+        expect(post 'api/v1/posts').to route_to('posts#create') 
     end
 
     it "should route to posts destroy" do
-        expect(delete 'api/v1/posts').to route_to('posts#index') 
+        expect(delete 'api/v1/posts/1').to route_to('posts#destroy',id: '1') 
     end
 end
