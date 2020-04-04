@@ -64,7 +64,7 @@ export default class CreateModal extends React.Component {
 
                             <div className="card-image card-padding">
                                     <ImageUploader 
-                                        image=''
+                                        image={this.selectImage}
                                         selectImage={this.selectImage}
                                         unselectImage={this.unselectImage} 
                                     />

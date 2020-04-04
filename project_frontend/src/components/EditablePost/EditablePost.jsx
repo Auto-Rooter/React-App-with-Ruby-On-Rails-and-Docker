@@ -30,7 +30,7 @@ class EditablePost extends PureComponent {
     if(this.state.selectedImage !== null) {
       formPostData.append('image', this.state.selectedImage);
     }
-
+    //formPostData.append('image', this.state.selectedImage);
     this.props.submit(formPostData, editablePost);
   }
 

@@ -69,7 +69,7 @@ export default class ImageUploader extends PureComponent {
         crossorigin="anonymous"
         config={componentConfig}
         eventHandlers={eventHandlers}
-        djsConfig={djsConfig}
+        djsConfig={djsConfig} isRequired
       />
     );
   }

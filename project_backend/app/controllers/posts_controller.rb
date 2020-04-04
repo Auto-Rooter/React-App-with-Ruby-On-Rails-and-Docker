@@ -4,7 +4,7 @@ class PostsController < ApplicationController
     # GET /api/posts
     def index
       #values = {"posts" => {Post.all.with_attached_image.page(params[:page]).per(2)} }
-      render json: Post.recent.with_attached_image
+      render json: Post.all.with_attached_image
     end
   
 
@@ -24,10 +24,16 @@ class PostsController < ApplicationController
 
     # POST /posts
   def create
-    @post = Post.new(post_params)
-
+    
+    if (params.has_key?(:image) && params[:image] == "")
+      @post = Post.new(post_params.except(:image))
+      #puts "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+    else
+      @post = Post.new(post_params)
+    end
+   
     if @post.save
-      render json: Post.all.with_attached_image
+      render json: Post.recent.with_attached_image
     else
       render json: @post.errors, status: :unprocessable_entity
     end
@@ -36,7 +42,7 @@ class PostsController < ApplicationController
   # DELETE /api/posts/1
   def destroy
     @post.destroy
-    render json: Post.all.with_attached_image
+    render json: Post.recent.with_attached_image
   end
   
     private

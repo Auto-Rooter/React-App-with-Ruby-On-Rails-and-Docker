@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-    
+    only: %I[create destroy]
 
     def create
         #@comment = Comment.new(comment_params)
