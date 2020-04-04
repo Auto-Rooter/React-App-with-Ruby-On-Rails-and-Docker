@@ -4,8 +4,8 @@
   - Testing : RSpec Framework
   - Database : Mysql
 
-## APIs:
-   **- Blog API : you can add post with(out) images also with comments**:<br>
+## REST APIs:
+   **- Blog REST API (CRUD) : you can add post with(out) images also with comments**:<br>
     <br>
     - Create new post:<br>
     <br>
