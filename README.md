@@ -36,7 +36,7 @@
     <br>
     <br>
     <br>
-  **- Triangel Checker: check if a triangle (by entering three parameters a,b,c) Scaleme/Equilat/Isosceles/Incorrect**:<br>
+  **- Triangel Checker: check if a triangle (by entering three parameters a,b,c) Scaleme/Equilateral/Isosceles/Incorrect**:<br>
   <br>
         ![](imgs/triangle.gif)
     <br>
