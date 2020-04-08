@@ -52,8 +52,8 @@ jobs:
       - run:
           name: Setup DB
           command: |
-          cd backend
-           bundle exec rails db:create db:schema:load --trace
+            cd backend
+             bundle exec rails db:create db:schema:load --trace
       - run:
           name: RSpec
           command: |
