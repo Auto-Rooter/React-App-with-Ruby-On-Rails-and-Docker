@@ -43,7 +43,7 @@ jobs:
       - configure_bundler
       - run:
           name: Install bundle
-          command:|
+          command: |
             cd project_backend
              bundle install
       - run:
