@@ -1,23 +1,26 @@
 class CommentsController < ApplicationController
 
     def create
-        #@comment = Comment.new(comment_params)
-        #@comment = @post.comments.create(comment_params)
-        #render json: Post.all.with_attached_image  
-
+        
         @post = Post.find(params[:post_id])
         @comment = @post.comments.create(comment_params)
 
         if @comment.save
-            render json: Post.all.with_attached_image
+            render json: {}, status: :created
         else
-            render json: @post.errors, status: :unprocessable_entity
+            render json: @comment.errors, status: :unprocessable_entity
         end
     end
 
     def destroy
-        Comment.find(params[:id]).destroy
-        render json: Post.all.with_attached_image
+
+        @comment = Comment.find(params[:id])
+        
+        if @comment.destroy
+            render json: {}, status: :no_content
+        else
+            render json: @comment.errors, status: :unprocessable_entity
+        end
     end
 
     private

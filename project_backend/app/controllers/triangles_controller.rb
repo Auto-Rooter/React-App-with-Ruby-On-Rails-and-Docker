@@ -12,7 +12,7 @@ class TrianglesController < ApplicationController
             render json: {"msg": "Scalene"}, status:200 
          end
       else
-        render json: {"errors": "Something wrong with yours params"}, status:400
+        render json: {"errors": "Something wrong with yours params"}, status:422
       end
       
     end
