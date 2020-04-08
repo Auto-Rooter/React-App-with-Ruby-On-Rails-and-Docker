@@ -1,4 +1,8 @@
-# Technologies are used :
+# React-Rails-App-MySQL-RSpec-Docker [![CircleCI](https://circleci.com/gh/Auto-Rooter/React-App-with-Ruby-On-Rails-with-Docker/tree/master.svg?style=svg)](https://circleci.com/gh/Auto-Rooter/React-App-with-Ruby-On-Rails-with-Docker/tree/master) : 
+<br>
+<br>
+<br>
+## Technologies are used :
   - Front-end : React Framework
   - Back-end : Ruby on Rails
   - Testing : RSpec Framework
@@ -28,7 +32,7 @@
     <br>
     <br>
     <br>
-    - Add and Delete comments:<br>
+    - Add and Delete comments:<br><br>
         ![](imgs/comments.gif)
     <br>
     <br>
