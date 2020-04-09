@@ -1,5 +1,3 @@
-# React-Rails-App-MySQL-RSpec-Docker [![CircleCI](https://circleci.com/gh/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker/tree/master.svg?style=svg)](https://circleci.com/gh/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker/tree/master)
-
 ## Welcome in the Backend side 😉:
 
 ## Usage

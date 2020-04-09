@@ -17,6 +17,7 @@ default: &default
   username: 9zyZIbc4rc
   password: fgIvs3va41
   host: remotemysql.com
+  database: 9zyZIbc4rc
   port: 3306
 
 
