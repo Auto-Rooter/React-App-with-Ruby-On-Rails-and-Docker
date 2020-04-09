@@ -1,24 +1,18 @@
-# README
+# React-Rails-App-MySQL-RSpec-Docker [![CircleCI](https://circleci.com/gh/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker/tree/master.svg?style=svg)](https://circleci.com/gh/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker/tree/master)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Welcome in the Backend side 😉:
 
-Things you may want to cover:
+## Usage
 
-* Ruby version
+```shell
+$ git clone https://github.com/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker.git && cd React-App-with-Ruby-On-Rails-and-Docker
 
-* System dependencies
+# Setup
+$ docker-compose run web rake db:create
+$ docker-compose run web rake db:migrate
+$ docker-compose run web rake db:seed
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Start
+$ docker-compose up 
+$ open http://localhost:3000
+```
