@@ -60,16 +60,16 @@ jobs:
             cd project_backend
              bundle exec rspec --profile 10 \
                               --format progress
-      - store_artifacts:
-          path: coverage
-      - save_cache:
-          key: hix_mysql-{{ .Branch }}-{{ checksum "project_backend/Gemfile.lock" }}
-          paths:
-            - vendor/bundle
-      - persist_to_workspace:
-          root: ~/
-          paths:
-            - ./hix_mysql
+      # - store_artifacts:
+      #     path: coverage
+      # - save_cache:
+      #     key: hix_mysql-{{ .Branch }}-{{ checksum "project_backend/Gemfile.lock" }}
+      #     paths:
+      #       - vendor/bundle
+      # - persist_to_workspace:
+      #     root: ~/
+      #     paths:
+      #       - ./hix_mysql
 
 workflows:
   version: 2
