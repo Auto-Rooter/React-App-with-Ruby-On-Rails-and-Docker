@@ -52,7 +52,7 @@ $ open http://localhost:8000
 
 ## Usage(Without Docker):
 <br>
-- Before we start , you should install Ruby Installer  (For Windows).
+- Before we start , you should install Ruby Installer  (For Windows).<br>
 - Inside [\config\database.yml] file Comment Docker, CircleCi parts and make sure Normal part is Uncommented.
 <br><br>
 
