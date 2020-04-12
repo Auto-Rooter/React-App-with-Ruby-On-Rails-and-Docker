@@ -91,12 +91,14 @@ $ open http://localhost:8000
 ```
 ## Tests:
 <br>
-- all the tests under the directory [project_backend\spec] :<br><br>
+- all the tests under the directory [project_backend\spec] :
+<br>
 
 ![](imgs/Tests.JPG)
 
-<br><br>
+<br>
 - You can Run all the test by:
+<br>
 
 ```shell
 # You should be in the backend directory
