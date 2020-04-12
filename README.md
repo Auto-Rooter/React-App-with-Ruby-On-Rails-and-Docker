@@ -1,4 +1,4 @@
-# React-Rails-App-MySQL-RSpec-Docker [![CircleCI](https://circleci.com/gh/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker/tree/master.svg?style=svg)](https://circleci.com/gh/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker/tree/master)
+# React-Rails-App-MySQL-RSpec-Docker [![CircleCI](https://circleci.com/gh/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker/tree/master.svg?style=svg)](https://circleci.com/gh/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker/tree/master) :
 <br>
 
 ## Technologies are used :
@@ -98,7 +98,7 @@ $ open http://localhost:8000
 
 <br>
 - You can Run all the test by:
-<br>
+<br><br>
 
 ```shell
 # You should be in the backend directory
@@ -116,7 +116,7 @@ $ rspec
 
 <br>
 - Also you can Run a specific Test (Ex: Run the test for POSTS Controller) :
-<br>
+<br><br>
 
 ```shell
 # You should be in the backend directory
