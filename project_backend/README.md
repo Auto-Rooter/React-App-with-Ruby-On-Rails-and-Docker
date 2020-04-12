@@ -6,8 +6,7 @@
 $ git clone https://github.com/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker.git && cd React-App-with-Ruby-On-Rails-and-Docker
 
 # Setup
-$ docker-compose run web rake db:create
-$ docker-compose run web rake db:migrate
+$ docker-compose build
 $ docker-compose run web rake db:seed
 
 # Start

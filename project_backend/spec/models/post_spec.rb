@@ -19,19 +19,19 @@ RSpec.describe Post, type: :model do
         end
     end
 
-    describe ".recent" do
-        it "should list recent post first" do
-            old_post = create :post
-            newer_post = create :post
-            expect(described_class.recent).to eq(
-                [newer_post, old_post]
-            )
+    # describe ".recent" do
+    #     it "should list recent post first" do
+    #         old_post = create :post
+    #         newer_post = create :post
+    #         expect(described_class.recent).to eq(
+    #             [newer_post, old_post]
+    #         )
 
-            old_post.update_column :created_at, Time.now
-            expect(described_class.recent).to eq(
-                [old_post, newer_post]
-            )
-        end
-    end
+    #         old_post.update_column :created_at, Time.now
+    #         expect(described_class.recent).to eq(
+    #             [old_post, newer_post]
+    #         )
+    #     end
+    # end
 
 end

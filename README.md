@@ -6,6 +6,90 @@
   - Back-end : Ruby on Rails
   - Testing : RSpec Framework
   - Database : Mysql
+  - CI/CD : CircleCI
+  - Images-Upload : Active Storage (on Backend) and react-dropzone-component (on React)
+  - (React App connect to Rails API using axios)
+  - React Style : bulma
+
+<br><br>
+
+## Usage(With Docker):
+<br>
+- Before we start , you should install Docker on your machine (For Back-end side):
+<br><br>
+
+```shell
+$ git clone https://github.com/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker.git && cd React-App-with-Ruby-On-Rails-and-Docker
+
+# Setup
+$ docker-compose build
+$ docker-compose run web rake db:seed
+
+# Run All Tests with RSpec
+$ docker-compose run web RSpec
+
+# Start
+$ docker-compose up 
+$ open http://localhost:3000
+
+
+```
+<br>
+- Now we need to start the Front-end part (You need to install Node.js [Tested on v12.13.0 ] ):
+<br><br>
+
+```shell
+$ cd project_frontend
+
+$ npm install
+
+# Start
+$ npm start
+$ open http://localhost:8000
+
+```
+<br><br><br>
+
+## Usage(Without Docker):
+<br>
+- Before we start , you should install Ruby Installer  (For Windows).
+- Inside [\config\database.yml] file Comment Docker, CircleCi parts and make sure Normal part is Uncommented.
+<br><br>
+
+```shell
+$ git clone https://github.com/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Docker.git && cd React-App-with-Ruby-On-Rails-and-Docker
+
+
+$ cd project_backend
+# Install all Gems
+$ bundle installr
+
+# Create DB, Migrate, Seed(Not necessarily) 
+$ rake db:create
+$ rake db:migrate
+$ rake db:seed
+
+
+# Start
+$ rails s
+$ open http://localhost:3000
+
+```
+<br>
+- Now we need to start the Front-end part (You need to install Node.js [Tested on v12.13.0 ] ):
+<br><br>
+
+```shell
+$ cd project_frontend
+
+$ npm install
+
+# Start
+$ npm start
+$ open http://localhost:8000
+
+```
+
 
 ## REST APIs:
    **- Blog REST API (CRUD) : you can add post with(out) images also with comments**:<br>
