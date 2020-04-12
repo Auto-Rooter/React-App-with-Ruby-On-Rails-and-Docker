@@ -122,7 +122,7 @@ $ rspec
 # You should be in the backend directory
 $ cd project_backend
 
-# Run All the Tests
+# Run POSTS Controller Test
 $ rspec spec/controllers/posts_controller_spec.rb
 
 ```
