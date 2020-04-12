@@ -91,8 +91,8 @@ $ open http://localhost:8000
 ```
 ## Tests:
 <br>
-- all the tests under the directory [project_backend\spec] :
-<br>
+- all the tests are under the directory [project_backend\spec] :
+<br><br>
 
 ![](imgs/Tests.JPG)
 
@@ -109,8 +109,8 @@ $ rspec
 
 ```
 <br>
-- You Should see Something like this:
-<br>
+- You Should See Something like this:
+<br><br>
 
 ![](imgs/result.JPG)
 
