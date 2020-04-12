@@ -62,7 +62,7 @@ $ git clone https://github.com/Auto-Rooter/React-App-with-Ruby-On-Rails-and-Dock
 
 $ cd project_backend
 # Install all Gems
-$ bundle installr
+$ bundle install
 
 # Create DB, Migrate, Seed(Not necessarily) 
 $ rake db:create
