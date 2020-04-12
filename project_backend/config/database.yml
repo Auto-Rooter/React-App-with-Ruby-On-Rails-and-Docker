@@ -45,7 +45,7 @@ default: &default
 
 development:
   <<: *default
-  # database: 9zyZIbc4rc
+  database: 9zyZIbc4rc
   # database: ror_task
 
 # Warning: The database defined as "test" will be erased and
@@ -53,7 +53,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  # database: 9zyZIbc4rc
+  database: 9zyZIbc4rc
   #database: ror_task_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
