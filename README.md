@@ -89,6 +89,44 @@ $ npm start
 $ open http://localhost:8000
 
 ```
+## Tests:
+<br>
+- all the tests under the directory [project_backend\spec] :<br><br>
+
+![](imgs/Tests.JPG)
+
+<br><br>
+- You can Run all the test by:
+
+```shell
+# You should be in the backend directory
+$ cd project_backend
+
+# Run All the Tests
+$ rspec
+
+```
+<br>
+- You Should see Something like this:
+<br>
+
+![](imgs/result.JPG)
+
+<br><br>
+- Also you can Run a specific Test (Ex: Run the test for POSTS Controller) :
+<br>
+
+```shell
+# You should be in the backend directory
+$ cd project_backend
+
+# Run All the Tests
+$ rspec spec/controllers/posts_controller_spec.rb
+
+```
+<br>
+
+![](imgs/posts_controller_test.JPG)
 
 
 ## REST APIs:
