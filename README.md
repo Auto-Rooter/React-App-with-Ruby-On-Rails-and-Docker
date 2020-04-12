@@ -114,7 +114,7 @@ $ rspec
 
 ![](imgs/result.JPG)
 
-<br><br>
+<br>
 - Also you can Run a specific Test (Ex: Run the test for POSTS Controller) :
 <br>
 
