@@ -49,27 +49,27 @@ jobs:
       - run:
           name: Wait for DB
           command: dockerize -wait tcp://remotemysql.com:3306 -timeout 1m
-      - run:
-          name: Setup DB
-          command: |
-            cd project_backend
-             bundle exec rails db:create db:schema:load --trace
+      # - run:
+      #     name: Setup DB
+      #     command: |
+      #       cd project_backend
+      #        bundle exec rails db:create db:schema:load --trace
       - run:
           name: RSpec
           command: |
             cd project_backend
              bundle exec rspec --profile 10 \
                               --format progress
-      # - store_artifacts:
-      #     path: coverage
-      # - save_cache:
-      #     key: hix_mysql-{{ .Branch }}-{{ checksum "project_backend/Gemfile.lock" }}
-      #     paths:
-      #       - vendor/bundle
-      # - persist_to_workspace:
-      #     root: ~/
-      #     paths:
-      #       - ./hix_mysql
+      - store_artifacts:
+          path: coverage
+      - save_cache:
+          key: hix_mysql-{{ .Branch }}-{{ checksum "project_backend/Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - ./hix_mysql
 
 workflows:
   version: 2
