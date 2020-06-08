@@ -2,7 +2,7 @@
 <br>
 
 ## Technologies are used :
-  - Front-end : React Framework
+  - Front-end : React.js
   - Back-end : Ruby on Rails
   - Testing : RSpec Framework
   - Database : Mysql
