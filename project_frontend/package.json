@@ -39,7 +39,7 @@
     ]
   },
   "devDependencies": {
-    "browserslist": "^4.11.0",
+    "browserslist": "^4.16.5",
     "webpack": "^4.42.0",
     "webpack-dev-server": "^3.10.3"
   }
